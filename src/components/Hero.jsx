@@ -65,27 +65,7 @@ export default function Hero() {
             </span>
           </a>
         </div>
-
-        {/* Stats */}
-        <div className="mt-20 pt-10 border-t border-white/10 grid grid-cols-3 gap-6 max-w-sm mx-auto">
-          {[
-            { n: "50+", l: "Propiedades" },
-            { n: "5★", l: "Reputación" },
-            { n: "24/7", l: "Disponible" },
-          ].map((s) => (
-            <div key={s.l}>
-              <p
-                style={{ fontFamily: "'Playfair Display', serif" }}
-                className="text-white text-2xl font-bold"
-              >
-                {s.n}
-              </p>
-              <p className="text-white/40 text-xs mt-0.5">{s.l}</p>
-            </div>
-          ))}
-        </div>
       </div>
-
       {/* Scroll */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/30 flex flex-col items-center gap-2">
         <span className="text-[10px] tracking-widest uppercase">Scroll</span>
